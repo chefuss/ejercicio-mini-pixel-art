@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +8,45 @@
   <title>mini pixel art...twoditwo</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <div class="container">
     <h1>Mini pixel art...twoditwo</h1>
     <div class="form">
-    <h2>Coloca cuantos pixeles tiene que tener tu grilla</h2>
-    <form action="#" class="grid-form">
+      <h2>Coloca cuantos pixeles tiene que tener tu grilla</h2>
+      <form action="#" method="get" class="grid-form">
+        <div class="input-group">
+          <label for="ancho">Coloca la cantidad de pixeles en el ancho</label>
+          <input type="number" name="ancho" id="ancho" step="5" min="5" max="25" value="5" class="input_field"
+            placeholder="ancho de la grilla input tipo number">
+        </div>
+        <div class="input-group">
+          <label for="ancho">Coloca la cantidad de pixeles en el alto</label>
+          <input type="text" name="alto" id="alto" class="input_field" value="5"
+            placeholder="alto de la grilla input tipo text">
+        </div>
+        <div class="input_group">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </div>
+    <div id="paleta">
       <div class="input-group">
-        <label for="ancho">Coloca la cantidad de pixeles en el ancho</label>
-        <input type="number" name="ancho" id="ancho" step="5" min="5" max="5" value="5" class="input_field" placeholder="ancho de la grilla input tipo number">
-      </div>
-      <div class="input-group">
-        <label for="ancho">Coloca la cantidad de pixeles en el alto</label>
-        <input type="text" name="alto" id="alto" class="input_field" value="5" placeholder="alto de la grilla input tipo text">
-      </div>
-      <div class="input_group">
-        <input type="submit" value="Enviar">
-      </div>
-    </form>
-  </div>
-  <div id="paleta">
-    <div class="input-group">
         <p>Elige un color para la paleta</p>
         <div class="color-group">
           <label for="color">Color</label>
           <input type="color" name="color" id="color">
         </div>
       </div>
-  </div>
-  <div class="grilla-container">
-    <h2>La grilla</h2>
-    <p>Cada cuadrado (pixel) de la grilla debe tener un ancho y un alto mínimo de 30px</p>
-    <div id="grilla"></div>
-  </div>
+    </div>
+    <div class="grilla-container">
+      <h2>La grilla</h2>
+      <p>Cada cuadrado (pixel) de la grilla debe tener un ancho y un alto mínimo de 30px</p>
+      <div id="grilla"></div>
+    </div>
   </div>
   <script src="js/jquery.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
