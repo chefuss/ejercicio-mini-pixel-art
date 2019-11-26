@@ -33,28 +33,29 @@ function crearGrilla(ancho, alto) {
     $grilla.append(pixel);
   }
 }
-  //deberá recorrer una vez para el alto, y crear tantos divs con clase pixel como haya  dicho el usuario.
-  //en este loop, debemos corregir la condición y multiplicar el alto por (alto - 1), asi crea filas y no sólo los divs.
+//deberá recorrer una vez para el alto, y crear tantos divs con clase pixel como haya  dicho el usuario.
+//en este loop, debemos corregir la condición y multiplicar el alto por (alto - 1), asi crea filas y no sólo los divs.
 
-  //en ambos casos agregamos los divs creados a la grilla.
+//en ambos casos agregamos los divs creados a la grilla.
 
-  //función escucharClicksEnLaGrilla()
-
-    //esta función debe prestar atención al usuario cuando.
-    //haga click en un pixel.
-    //cuando apriete el mouse
-    //cuando suelte el mouse
-    //cuando el mouse se mueva
-    //y cuando el mouse salga de la grilla.
+//función escucharClicksEnLaGrilla()
 
 
-  //como funciones de ayuda vamos a crear:
-    // funcion mouseActivo() esta función nos va a ayudar a saber si el usuario ha presionado el mouse.
-    //en este caso deberá tornar una variable de ayuda a true. La variable se podría llamar mouseApretado, y por defecto debería estar en false. 
-    //si es una variable que nos sirve para varias funciones, quizás no debería ser local.
+//esta función debe prestar atención al usuario cuando.
+//haga click en un pixel.
+//cuando apriete el mouse
+//cuando suelte el mouse
+//cuando el mouse se mueva
+//y cuando el mouse salga de la grilla.
 
-    // función mouseInactivo, debe hacer lo contrario a la anterior.
 
-    //función pintar
-    //esta función solo debe usarse cuando el mouseApretado está en true,
-    //deberá tener en cuenta el elemento sobre el que se está pasando, y cambiar el color de fondo por el color que tenga en el selector de color.
+//como funciones de ayuda vamos a crear:
+// funcion mouseActivo() esta función nos va a ayudar a saber si el usuario ha presionado el mouse.
+//en este caso deberá tornar una variable de ayuda a true. La variable se podría llamar mouseApretado, y por defecto debería estar en false. 
+//si es una variable que nos sirve para varias funciones, quizás no debería ser local.
+
+// función mouseInactivo, debe hacer lo contrario a la anterior.
+
+//función pintar
+//esta función solo debe usarse cuando el mouseApretado está en true,
+//deberá tener en cuenta el elemento sobre el que se está pasando, y cambiar el color de fondo por el color que tenga en el selector de color.
